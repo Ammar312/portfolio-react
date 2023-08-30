@@ -54,7 +54,7 @@
 }
 @layer utilities {
   .section {
-    @apply py-8 lg:py-24 px-8 lg:px-24 lg:h-screen flex items-center;
+    @apply py-8 lg:py-24 px-8 lg:px-24 flex items-center;
   }
   .btn {
     @apply rounded-full font-orbitron text-white font-medium;

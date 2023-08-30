@@ -8,10 +8,10 @@ const Banner = () => {
   return (
     <div className="section overflow-hidden" id="home">
       <div className=" container mx-auto">
-        <div>
+        <div className=" flex flex-col gap-y-8 lg:flex-row">
           {/* text */}
           <div className=" flex-1 flex flex-col font-rajdhani items-center lg:items-start">
-            <h1 className=" text-[45px] font-bold leading-[50px] lg:text-[105px] mb-8">
+            <h1 className=" text-[45px] font-bold max-lg:leading-[50px] leading-[85px] lg:text-[100px] mb-8">
               AMMAR <span>UL</span> MUSTAFA
             </h1>
             <div className=" mb-6 text-[36px] lg:text-[60px] font-rajdhani font-semibold uppercase leading-[1]">
@@ -54,7 +54,7 @@ const Banner = () => {
             </div>
           </div>
           <div>
-            <img src={image} alt="" />
+            <img src={image} alt="image" />
           </div>
         </div>
       </div>
