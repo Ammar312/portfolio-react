@@ -1,17 +1,17 @@
 import React from "react";
 import image from "../assets/avatar.svg";
-import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
-    <div className="section" id="home">
+    <div className="section overflow-hidden" id="home">
       <div className=" container mx-auto">
         <div>
           {/* text */}
-          <div>
-            <h1>
+          <div className=" flex-1 flex flex-col font-rajdhani items-center lg:items-start">
+            <h1 className=" text-[45px] font-bold leading-[50px] lg:text-[105px] mb-8">
               AMMAR <span>UL</span> MUSTAFA
             </h1>
             <div className=" mb-6 text-[36px] lg:text-[60px] font-rajdhani font-semibold uppercase leading-[1]">
@@ -31,19 +31,25 @@ const Banner = () => {
                 className=" text-accent"
               />
             </div>
-            <p>
+            <p className=" max-w-lg  lg:mx-0">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Temporibus, aut autem? Deserunt, totam id suscipit
             </p>
-            <div>
+            <div className=" flex items-center gap-6 my-12  lg:mx-0">
               <button className=" btn btn-lg">Contact Me</button>
               <a href="#" className=" text-gradient text-base">
                 My Portfolio
               </a>
             </div>
-            <div>
+            <div className=" border-2 border-blue-400 flex gap-5 text-[20px] max-w-max">
               <a href="#">
                 <FaGithub />
+              </a>
+              <a href="#">
+                <FaLinkedin />
+              </a>
+              <a href="#">
+                <FaWhatsapp />
               </a>
             </div>
           </div>
