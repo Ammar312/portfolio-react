@@ -3,26 +3,42 @@ import image from "../assets/avatar.svg";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Banner = () => {
   return (
-    <div className="section overflow-hidden" id="home">
-      <div className=" container mx-auto">
-        <div className=" flex flex-col gap-y-8 lg:flex-row">
+    <section
+      className=" min-h-[85vh] lg:min-h-[78vh] flex items-center overflow-hidden mt-10"
+      id="home"
+    >
+      <div className=" container mx-auto max-w-[990px]">
+        <div className=" flex flex-col justify-center gap-y-8 lg:flex-row lg:gap-x-12 items-center">
           {/* text */}
           <div className=" flex-1 flex flex-col font-rajdhani items-center lg:items-start">
-            <h1 className=" text-[45px] font-bold max-lg:leading-[50px] leading-[85px] lg:text-[100px] mb-8">
-              AMMAR <span>UL</span> MUSTAFA
-            </h1>
-            <div className=" mb-6 text-[36px] lg:text-[60px] font-rajdhani font-semibold uppercase leading-[1]">
+            <motion.h1
+              variants={fadeIn("up", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className=" text-[45px] font-bold max-lg:leading-[50px] leading-[85px] lg:text-[80px] mb-8"
+            >
+              AMMAR <span>MUSTAFA</span>
+            </motion.h1>
+            <motion.div
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className=" mb-6 text-[39px] lg:text-[53px] font-rajdhani font-semibold uppercase leading-[1]"
+            >
               <span className=" mr-3">I AM A </span>
               <TypeAnimation
                 sequence={[
-                  "Front-End Developer",
+                  "Front-End ",
                   2000,
-                  "Back-End Developer",
+                  "Back-End ",
                   2000,
-                  "Mern-Stack Developer",
+                  "Mern-Stack ",
                   2000,
                 ]}
                 speed={50}
@@ -30,18 +46,36 @@ const Banner = () => {
                 wrapper="span"
                 className=" text-accent"
               />
-            </div>
-            <p className=" max-w-lg  lg:mx-0">
+            </motion.div>
+            <motion.p
+              variants={fadeIn("up", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className=" max-w-lg  lg:mx-0"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Temporibus, aut autem? Deserunt, totam id suscipit
-            </p>
-            <div className=" flex items-center gap-6 my-12  lg:mx-0">
+            </motion.p>
+            <motion.div
+              variants={fadeIn("up", 0.6)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className=" flex items-center gap-6 my-12  lg:mx-0"
+            >
               <button className=" btn btn-lg">Contact Me</button>
               <a href="#" className=" text-gradient text-base">
                 My Portfolio
               </a>
-            </div>
-            <div className=" border-2 border-blue-400 flex gap-5 text-[20px] max-w-max">
+            </motion.div>
+            <motion.div
+              variants={fadeIn("up", 0.7)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className=" flex gap-5 text-[20px] max-w-max"
+            >
               <a href="#">
                 <FaGithub />
               </a>
@@ -51,14 +85,19 @@ const Banner = () => {
               <a href="#">
                 <FaWhatsapp />
               </a>
-            </div>
+            </motion.div>
           </div>
-          <div>
+          <motion.div
+            variants={fadeIn("down", 0.6)}
+            initial="hidden"
+            whileInView={"show"}
+            className=" hidden lg:flex flex-1 max-w-[320px] lg:max-w-[432px]"
+          >
             <img src={image} alt="image" />
-          </div>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
