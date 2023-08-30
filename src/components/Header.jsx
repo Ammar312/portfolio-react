@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="py-8">
       <div className=" flex justify-center">
-        <div className=" container flex justify-between items-center min-w-[350px] max-w-[700px]">
+        <div className=" container flex justify-between items-center min-w-[350px] max-w-[900px]">
           <a href="#">
             <img src={logo} alt="" />
           </a>
