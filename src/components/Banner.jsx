@@ -8,11 +8,11 @@ import { fadeIn } from "../variants";
 const Banner = () => {
   return (
     <section
-      className=" min-h-[85vh] lg:min-h-[78vh] flex items-center overflow-hidden mt-10"
+      className=" min-h-[85vh] lg:min-h-[78vh] flex items-center overflow-hidden lg:mt-10"
       id="home"
     >
       <div className=" container mx-auto max-w-[990px]">
-        <div className=" flex flex-col justify-center gap-y-8 lg:flex-row lg:gap-x-12 items-center">
+        <div className=" flex flex-col justify-center gap-y-8 lg:flex-row lg:gap-x-12 items-center lg:items-start">
           {/* text */}
           <div className=" flex-1 flex flex-col font-rajdhani items-center lg:items-start">
             <motion.h1
@@ -20,7 +20,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" text-[45px] font-bold max-lg:leading-[50px] leading-[85px] lg:text-[80px] mb-8"
+              className=" text-[45px] font-bold max-lg:leading-[50px] leading-[85px] lg:text-[80px] mb-6 lg:mb-5"
             >
               AMMAR <span>MUSTAFA</span>
             </motion.h1>
@@ -91,7 +91,7 @@ const Banner = () => {
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             whileInView={"show"}
-            className=" hidden lg:flex flex-1 max-w-[320px] lg:max-w-[432px]"
+            className=" hidden lg:flex flex-1 max-w-[320px] lg:max-w-[380px]"
           >
             <img src={image} alt="image" />
           </motion.div>
