@@ -62,7 +62,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" flex items-center gap-6 my-12  lg:mx-0"
+              className=" flex items-center gap-6 mb-10 mt-4  lg:mx-0"
             >
               <button className=" btn btn-lg">Contact Me</button>
               <a href="#" className=" text-gradient text-base">
