@@ -27,9 +27,15 @@ const services = [
 const Services = () => {
   return (
     <section className="section" id="services">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row">
-          <div className=" flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0">
+      <div className="container mx-auto max-w-[1280px]">
+        <div className="flex flex-col lg:flex-row gap-x-4">
+          <motion.div
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className=" flex-1 lg:bg-services  lg:bg-right-center pb-8 bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+          >
             <h2 className="font-orbitron text-[27px] mb-2 tracking-[10%] uppercase text-accent">
               What I Do
             </h2>
@@ -38,13 +44,22 @@ const Services = () => {
               I'm Mern-Stack developer with over 0 years of experience
             </h3>
             <button className="btn btn-sm">See My Work</button>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            className="flex-1"
+            variants={fadeIn("up", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.5 }}
+          >
             <div>
               {services.map((service, index) => {
                 const { field, description, link } = service;
                 return (
-                  <div key={index}>
+                  <div
+                    key={index}
+                    className=" flex border-b border-white/20 h-[146px] mb-[38px]"
+                  >
                     <div className=" max-w-[476px]">
                       <h4 className=" text-[20px] tracking-wider font-orbitron font-semibold mb-6">
                         {field}
@@ -53,12 +68,22 @@ const Services = () => {
                         {description}
                       </p>
                     </div>
-                    <div>link</div>
+                    <div className=" flex flex-col flex-1 items-end">
+                      <a
+                        href="#"
+                        className="flex justify-center items-center btn w-9 h-9 mb-[39]"
+                      >
+                        <BsArrowUpRight />
+                      </a>
+                      <a href="#" className=" text-gradient text-sm">
+                        {link}
+                      </a>
+                    </div>
                   </div>
                 );
               })}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
