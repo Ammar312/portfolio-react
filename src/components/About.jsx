@@ -14,13 +14,13 @@ const About = () => {
         <div className=" flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-20">
           <div className=" flex-1 bg-about bg-contain bg-no-repeat h-[450px] mix-blend-lighten bg-top"></div>
           <div className=" flex-1">
-            <h2 className=" font-orbitron text-[32px] mb-4 tracking-[10%] uppercase text-accent">
+            <h2 className=" font-orbitron text-[27px] mb-2 tracking-[10%] uppercase text-accent">
               About me
             </h2>
-            <h3 className=" font-orbitron  font-semibold text-[26px] mb-6 leading-[46px] mb-4">
+            <h3 className=" font-orbitron  font-semibold text-[24px] leading-[46px] mb-4">
               I'm Mern-Stack developer with over 0 years of experience
             </h3>
-            <p className=" mb-6">
+            <p className=" mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
               temporibus, neque mollitia corporis odit est magnam magni.
             </p>
