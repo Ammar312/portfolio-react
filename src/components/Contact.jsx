@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Contact = () => {
+  const formRef = useRef();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <section className=" py-16 lg:section" id="contact">
       <div className=" container mx-auto">
@@ -25,7 +29,11 @@ const Contact = () => {
             </div>
           </div>
           {/* form */}
-          <form className=" flex-1 flex border pb-24 p-6 items-start rounded-2xl flex-col gap-y-6 max-w-xl ">
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className=" flex-1 flex border pb-24 p-6 items-start rounded-2xl flex-col gap-y-6 max-w-xl "
+          >
             <input
               type="text"
               className=" bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
