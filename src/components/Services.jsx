@@ -34,7 +34,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className=" flex-1 lg:bg-services  lg:bg-right-center pb-8 bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+            className=" flex-1 lg:bg-services lg:bg-bottom pb-8 bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="font-orbitron text-[27px] mb-2 tracking-[10%] uppercase text-accent">
               What I Do

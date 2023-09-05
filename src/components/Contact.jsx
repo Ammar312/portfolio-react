@@ -6,7 +6,13 @@ const Contact = () => {
   return (
     <section className=" py-16 lg:section" id="contact">
       <div className=" container mx-auto">
-        <div className=" flex flex-col lg:flex-row gap-x-10">
+        <motion.div
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }}
+          className=" flex flex-col lg:flex-row gap-x-16 lg:justify-evenly lg:items-center mx-4"
+        >
           {/* text */}
           <div>
             <div className=" flex-1">
@@ -19,7 +25,7 @@ const Contact = () => {
             </div>
           </div>
           {/* form */}
-          <form className=" flex-1 flex border pb-24 p-6 items-start rounded-2xl flex-col gap-y-6">
+          <form className=" flex-1 flex border pb-24 p-6 items-start rounded-2xl flex-col gap-y-6 max-w-xl ">
             <input
               type="text"
               className=" bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
@@ -36,7 +42,7 @@ const Contact = () => {
             ></textarea>
             <button className=" btn btn-lg">Send Message</button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
