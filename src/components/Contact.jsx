@@ -55,15 +55,18 @@ const Contact = () => {
               type="text"
               className=" bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               placeholder="Your Name"
+              name="user_name"
             />
             <input
-              type="text"
+              type="email"
               className=" bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               placeholder="Your Email"
+              name="user_email"
             />
             <textarea
               className=" bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
               placeholder="Your Message"
+              name="message"
             ></textarea>
             <button className=" btn btn-lg" type="submit">
               Send Message

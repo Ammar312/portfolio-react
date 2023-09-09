@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -64,7 +65,11 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className=" flex items-center gap-6 mb-10 mt-4  lg:mx-0"
             >
-              <button className=" btn btn-lg">Contact Me</button>
+              <Link to="contact" smooth={true} spy={true}>
+                <button className=" btn btn-lg cursor-pointer">
+                  Contact Me
+                </button>
+              </Link>
               <a href="#" className=" text-gradient text-base">
                 My Portfolio
               </a>
