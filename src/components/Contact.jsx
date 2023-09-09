@@ -1,11 +1,28 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formRef = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_y5208go",
+        "template_bl48rqu",
+        formRef.current,
+        "uMcl3yAGqH-JtmrcS"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <section className=" py-16 lg:section" id="contact">
@@ -48,7 +65,9 @@ const Contact = () => {
               className=" bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
               placeholder="Your Message"
             ></textarea>
-            <button className=" btn btn-lg">Send Message</button>
+            <button className=" btn btn-lg" type="submit">
+              Send Message
+            </button>
           </form>
         </motion.div>
       </div>
