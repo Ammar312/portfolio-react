@@ -21,16 +21,16 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" text-[45px] font-bold max-lg:leading-[50px] leading-[85px] lg:text-[80px] mb-6 lg:mb-5"
+              className=" text-[45px] font-bold max-lg:leading-[50px] leading-[85px] md:text-[55px] lg:text-[75px] mb-6 lg:mb-5"
             >
-              AMMAR <span>MUSTAFA</span>
+              AMMAR <span>UL MUSTAFA</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" mb-6 text-[39px] lg:text-[53px] font-rajdhani font-semibold uppercase leading-[1]"
+              className=" mb-6 text-[39px] lg:text-[48px] font-rajdhani font-semibold uppercase leading-[1]"
             >
               <span className=" mr-3">I AM A </span>
               <TypeAnimation
@@ -53,10 +53,11 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" max-w-lg  lg:mx-0"
+              className=" max-w-lg  lg:mx-0 max-sm:text-center"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, aut autem? Deserunt, totam id suscipit
+              Passionate MERN Stack Developer with a knack for creating smooth
+              web experiences. Turning ideas into practical solutions with
+              creative coding.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}

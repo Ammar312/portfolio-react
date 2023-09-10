@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.svg";
+import pdf from "../assets/JavaScript.pdf";
 
 const Header = () => {
   return (
@@ -13,7 +13,9 @@ const Header = () => {
             <div className=" text-gradient">AMMAR</div>
             MUSTAFA
           </div>
-          <button className=" btn btn-sm">Work With Me</button>
+          <a href={pdf} download="javascript" target="_blank" rel="noreferrer">
+            <button className=" btn btn-sm">Work With Me</button>
+          </a>
         </div>
       </div>
     </header>
