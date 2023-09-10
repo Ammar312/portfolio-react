@@ -23,7 +23,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className=" text-[45px] font-bold max-lg:leading-[50px] leading-[85px] md:text-[55px] lg:text-[75px] mb-6 lg:mb-5"
             >
-              AMMAR <span>UL MUSTAFA</span>
+              AMMAR <span> MUSTAFA</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
