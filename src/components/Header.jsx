@@ -1,5 +1,6 @@
 import React from "react";
 import pdf from "../assets/JavaScript.pdf";
+import { Tooltip } from "antd";
 
 const Header = () => {
   return (
@@ -9,13 +10,22 @@ const Header = () => {
           {/* <a href="#">
             <img src={logo} alt="" />
           </a> */}
-          <div className=" w-[111px] h-[48] text-2xl font-extrabold leading-[23px] font-orbitron">
-            <div className=" text-gradient">AMMAR</div>
-            MUSTAFA
-          </div>
-          <a href={pdf} download="javascript" target="_blank" rel="noreferrer">
-            <button className=" btn btn-sm">Work With Me</button>
-          </a>
+          <Tooltip title="Ammar Ul Mustafa" color="#b936ee">
+            <div className=" w-[111px] h-[48] text-2xl font-extrabold leading-[23px] font-orbitron">
+              <div className=" text-gradient">AMMAR</div>
+              MUSTAFA
+            </div>
+          </Tooltip>
+          <Tooltip title="Download My CV" color="#b936ee">
+            <a
+              href={pdf}
+              download="javascript"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className=" btn btn-sm">Download CV</button>
+            </a>
+          </Tooltip>
         </div>
       </div>
     </header>
