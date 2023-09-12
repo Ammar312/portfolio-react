@@ -5,12 +5,12 @@ import constant from "../constants/Constant";
 const Projects = () => {
   return (
     <section
-      className="py-8 lg:py-16 px-8 lg:h-screen flex border-2 overflow-hidden"
+      className="py-8 lg:py-10 px-8 lg:h-screen flex border-2 overflow-hidden"
       id="projects"
     >
-      <div className=" border-2 border-green-500 ">
+      <div className=" border-2 border-green-500 h-full max-w-full overflow-hidden ">
         <h1 className=" text-3xl text-gradient border mb-10">MY PROJECTS</h1>
-        <div className="border border-red-300 flex flex-1 gap-4 flex-wrap">
+        <div className="border border-red-300 flex flex-1 gap-4 flex-wrap h-full overflow-y-auto scrollbar">
           {constant.map((card) => (
             <div className="group relative border-white/50 border-2 overflow-hidden rounded-xl max-w-[380px]">
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
