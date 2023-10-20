@@ -32,6 +32,11 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #ff56f6;
 }
+@media screen and (max-width: 500px) {
+  .scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
 
 .gradient,
 .active {
