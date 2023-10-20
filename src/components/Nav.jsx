@@ -1,5 +1,6 @@
 import React from "react";
-import { BiHomeAlt, BiUser } from "react-icons/bi";
+import { BiHomeAlt } from "react-icons/bi";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { BsClipboardData, BsBriefcase, BsChatSquareText } from "react-icons/bs";
 import { Link } from "react-scroll";
 
@@ -19,21 +20,13 @@ const Nav = () => {
             <BiHomeAlt />
           </Link>
           <Link
-            to="about"
-            activeClass="active"
-            smooth={true}
-            spy={true}
-            className=" cursor-pointer w-[60px] h-[60px] flex justify-center items-center"
-          >
-            <BiUser />
-          </Link>
-          <Link
             to="services"
             activeClass="active"
             smooth={true}
             spy={true}
             className=" cursor-pointer w-[60px] h-[60px] flex justify-center items-center"
           >
+            {/* <BiUser /> */}
             <BsClipboardData />
           </Link>
           <Link
@@ -44,6 +37,15 @@ const Nav = () => {
             className=" cursor-pointer w-[60px] h-[60px] flex justify-center items-center"
           >
             <BsBriefcase />
+          </Link>
+          <Link
+            to="projects"
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            className=" cursor-pointer w-[60px] h-[60px] flex justify-center items-center"
+          >
+            <AiOutlineFundProjectionScreen />
           </Link>
           <Link
             to="contact"

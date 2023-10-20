@@ -53,7 +53,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" max-w-lg  lg:mx-0 max-sm:text-center"
+              className=" max-w-lg  lg:mx-0 max-sm:text-center font-medium"
             >
               Passionate MERN Stack Developer with a knack for creating smooth
               web experiences. Turning ideas into practical solutions with
@@ -80,7 +80,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" flex gap-5 text-[20px] max-w-max"
+              className=" flex gap-5 text-[20px] max-w-max md:hidden"
             >
               <a href="#">
                 <FaGithub />
