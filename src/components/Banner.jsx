@@ -30,16 +30,16 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" mb-6 text-[39px] lg:text-[48px] font-rajdhani font-semibold uppercase leading-[1]"
+              className=" mb-6 text-[39px] lg:text-[40px] font-rajdhani font-semibold uppercase leading-[1]"
             >
               <span className=" mr-3">I AM A </span>
               <TypeAnimation
                 sequence={[
-                  "Front-End ",
+                  "Front-End Developer ",
                   2000,
-                  "Back-End ",
+                  "Back-End Developer",
                   2000,
-                  "Mern-Stack ",
+                  "Mern-Stack Developer",
                   2000,
                 ]}
                 speed={50}
@@ -71,9 +71,11 @@ const Banner = () => {
                   Contact Me
                 </button>
               </Link>
-              <a href="#" className=" text-gradient text-base">
-                My Portfolio
-              </a>
+              <Link to="projects" smooth={true} spy={true}>
+                <a href="#" className=" text-gradient text-base">
+                  My Projects
+                </a>
+              </Link>
             </motion.div>
             <motion.div
               variants={fadeIn("up", 0.7)}

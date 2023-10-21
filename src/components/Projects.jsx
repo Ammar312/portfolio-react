@@ -12,7 +12,7 @@ const Projects = () => {
     >
       <div className=" h-full max-w-full overflow-hidden ">
         <h1 className=" text-3xl text-gradient mb-8">MY PROJECTS</h1>
-        <div className=" flex flex-1 gap-4 flex-wrap justify-center gap-x-12 gap-y-16 h-full overflow-y-auto scrollbar ">
+        <div className=" flex flex-1 gap-4 flex-wrap justify-center gap-x-12 gap-y-9 h-full overflow-y-auto scrollbar pb-20">
           {constant.map((card, index) => (
             <motion.div
               variants={fadeIn("up", 0.5)}
@@ -35,7 +35,7 @@ const Projects = () => {
               <img
                 src={card.img}
                 alt="img"
-                className=" w-full group-hover:scale-125 transition-all duration-500 brightness-90"
+                className=" w-full group-hover:scale-125 transition-all duration-500 brightness-90  group-hover:rotate-12"
               />
               <div className=" absolute -bottom-full left-8 group-hover:bottom-16 transition-all duration-500 z-50">
                 <span className=" text-gradient text-2xl">{card.title}</span>
