@@ -14,13 +14,13 @@ const services = [
   {
     field: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas maiores recusandae dolorem laudantium, a molestias aliquid iusto ratione suscipit?",
+      "Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.",
     link: "Learn more",
   },
   {
     field: "App Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas maiores recusandae dolorem laudantium, a molestias aliquid iusto ratione suscipit?",
+      "Mobile app development is the act or process by which a mobile app is developed for one or more mobile devices, which can include personal digital assistants (PDA), enterprise digital assistants (EDA), or mobile phones.",
     link: "Learn more",
   },
 ];
@@ -61,15 +61,15 @@ const Services = () => {
                 return (
                   <div
                     key={index}
-                    className=" flex border-b border-white/20 h-[146px] mb-[38px]"
+                    className=" flex border-b border-white/20 h-[176px] mb-[38px]"
                   >
                     <div className=" max-w-[476px]">
                       <h4 className=" text-[20px] tracking-wider font-orbitron font-semibold mb-6">
                         {field}
                       </h4>
-                      <p className=" font-rajdhani leading-tight">
+                      <div className=" font-rajdhani leading-tight">
                         {description}
-                      </p>
+                      </div>
                     </div>
                     <div className=" flex flex-col flex-1 items-end">
                       <a
