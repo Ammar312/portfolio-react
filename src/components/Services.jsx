@@ -35,14 +35,14 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className=" flex-1  lg:bg-bottom pb-8 bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+            className=" flex-1 lg:bg-services bg-contain lg:bg-bottom pb-8 bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="font-orbitron text-[27px] mb-2 tracking-[10%] uppercase text-accent">
               What I Do
             </h2>
             <h3 className="font-orbitron  font-semibold text-[24px] leading-[46px] max-w-[455px] mb-16">
-              {" "}
-              I'm Mern-Stack developer with over 0 years of experience
+              As a Mern-Stack developer designing interactive ui on React and
+              building secure server turning ideas into reality
             </h3>
             <Link to="projects" smooth={true} spy={true}>
               <button className="btn btn-sm">See My Work</button>
