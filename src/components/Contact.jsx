@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -40,10 +41,30 @@ const Contact = () => {
               <h4 className=" text-xl uppercase text-accent font-medium mb-2 tracking-wide">
                 Get in touch
               </h4>
-              <h2 className=" text-[45px] lg:text-[75px] leading-none mb-12">
+              <h2 className=" text-[45px] lg:text-[75px] leading-none mb-8">
                 Let's work <br /> together!
               </h2>
             </div>
+            <motion.div
+              variants={fadeIn("up", 0.7)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className=" flex gap-5 text-[30px] md:text-[40px] max-w-max mb-4"
+            >
+              <a href="https://github.com/Ammar312/">
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ammar-ul-mustafa-728b5820b/"
+                className="text-blue-500"
+              >
+                <FaLinkedin />
+              </a>
+              <a href="#" className="text-green-500">
+                <FaWhatsapp />
+              </a>
+            </motion.div>
           </div>
           {/* form */}
           <form

@@ -10,13 +10,14 @@ import birthday from "./birthday.png";
 import projectplanning from "./projectplanning.png";
 import dictionary from "./dictionary.png";
 import advice from "./advice.png";
+import movieflix from "./movieflix.png";
 
 const constant = [
   {
-    img: servercrud,
-    title: "React CRUD",
-    description: "React, Tailwind CSS, ExpressJS",
-    link: "https://github.com/Ammar312/server-crud-react",
+    img: movieflix,
+    title: "Movie Flix",
+    description: "React, CSS ",
+    link: "https://movie-fetch-api-react.netlify.app/",
   },
   {
     img: personalblog,
@@ -24,6 +25,13 @@ const constant = [
     description: "HTML, CSS, ECMASCRIPT, FireBase",
     link: "https://github.com/Ammar312/mini-hackathon-saylani",
   },
+  {
+    img: servercrud,
+    title: "React CRUD",
+    description: "React, Tailwind CSS, ExpressJS",
+    link: "https://github.com/Ammar312/server-crud-react",
+  },
+
   {
     img: jwt,
     title: "Secure Apis",

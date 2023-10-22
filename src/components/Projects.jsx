@@ -35,7 +35,7 @@ const Projects = () => {
               <img
                 src={card.img}
                 alt="img"
-                className=" w-full group-hover:scale-125 transition-all duration-500 brightness-90  group-hover:rotate-12"
+                className=" w-full group-hover:scale-125 transition-all duration-500 brightness-90 "
               />
               <div className=" absolute -bottom-full left-8 group-hover:bottom-16 transition-all duration-500 z-50">
                 <span className=" text-gradient text-2xl">{card.title}</span>
