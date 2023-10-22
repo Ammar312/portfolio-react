@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { message } from "antd";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -19,9 +20,11 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          message.success("Email Sent");
         },
         (error) => {
           console.log(error.text);
+          message.error("Error in sending mail");
         }
       );
   };
@@ -75,7 +78,7 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className=" flex-1 flex border pb-24 p-6 items-start rounded-2xl flex-col gap-y-6 max-w-xl "
+            className=" flex-1 flex border pb-20 p-6 items-start rounded-2xl flex-col gap-y-6 max-w-lg "
           >
             <input
               type="text"
@@ -90,7 +93,7 @@ const Contact = () => {
               name="user_email"
             />
             <textarea
-              className=" bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
+              className=" bg-transparent border-b py-6 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-8"
               placeholder="Your Message"
               name="message"
             ></textarea>

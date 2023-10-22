@@ -13,7 +13,7 @@ function App() {
       <Banner />
       <Nav />
       <Services />
-      <Work />
+      {/* <Work /> */}
       <Projects />
       <Contact />
       {/* <div className="h-[4000px]"></div> */}

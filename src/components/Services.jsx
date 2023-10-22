@@ -16,12 +16,14 @@ const services = [
     description:
       "Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.",
     link: "Learn more",
+    ahref: "https://www.geeksforgeeks.org/web-development/",
   },
   {
-    field: "App Development",
+    field: "Progressive Web Apps",
     description:
-      "Mobile app development is the act or process by which a mobile app is developed for one or more mobile devices, which can include personal digital assistants (PDA), enterprise digital assistants (EDA), or mobile phones.",
+      "A progressive web app (PWA) is an app that's built using web platform technologies, but that provides a user experience like that of a platform-specific app.",
     link: "Learn more",
+    ahref: "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps",
   },
 ];
 
@@ -57,7 +59,7 @@ const Services = () => {
           >
             <div>
               {services.map((service, index) => {
-                const { field, description, link } = service;
+                const { field, description, link, ahref } = service;
                 return (
                   <div
                     key={index}
@@ -73,12 +75,17 @@ const Services = () => {
                     </div>
                     <div className=" flex flex-col flex-1 items-end">
                       <a
-                        href="#"
+                        href={ahref}
                         className="flex justify-center items-center btn w-9 h-9 mb-[39]"
+                        target="_blank"
                       >
                         <BsArrowUpRight />
                       </a>
-                      <a href="#" className=" text-gradient text-sm">
+                      <a
+                        href={ahref}
+                        className=" text-gradient text-sm"
+                        target="_blank"
+                      >
                         {link}
                       </a>
                     </div>
