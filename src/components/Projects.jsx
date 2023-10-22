@@ -12,7 +12,7 @@ const Projects = () => {
     >
       <div className=" h-full max-w-full overflow-hidden ">
         <h1 className=" text-3xl text-gradient mb-8">MY PROJECTS</h1>
-        <div className=" flex flex-1 gap-4 flex-wrap justify-center gap-x-12 gap-y-9 h-full overflow-y-auto scrollbar pb-20">
+        <div className=" flex flex-1 gap-4 flex-wrap justify-center gap-x-12 gap-y-9 h-full overflow-y-auto scrollbar pb-40">
           {constant.map((card, index) => (
             <motion.div
               variants={fadeIn("up", 0.5)}

@@ -5,6 +5,9 @@ import ai from "./ai.png";
 import mongo from "./mongocrud.png";
 import threads from "./threads.png";
 import weatherapp from "./weatherapp.png";
+import grocerybud from "./grocerybud.png";
+import birthday from "./birthday.png";
+import projectplanning from "./projectplanning.png";
 
 const constant = [
   {
@@ -48,6 +51,24 @@ const constant = [
     title: "Weather App ",
     description: "HTML, CSS, JavaScript",
     link: "https://github.com/Ammar312/weather-app",
+  },
+  {
+    img: grocerybud,
+    title: "Grocery Bud ",
+    description: "HTML, CSS, JavaScript",
+    link: "",
+  },
+  {
+    img: birthday,
+    title: "Birthday Counter ",
+    description: "HTML, CSS, JavaScript",
+    link: "",
+  },
+  {
+    img: projectplanning,
+    title: "Project Planning ",
+    description: "HTML, CSS, JavaScript",
+    link: "",
   },
 ];
 export default constant;
