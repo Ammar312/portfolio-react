@@ -8,6 +8,8 @@ import weatherapp from "./weatherapp.png";
 import grocerybud from "./grocerybud.png";
 import birthday from "./birthday.png";
 import projectplanning from "./projectplanning.png";
+import dictionary from "./dictionary.png";
+import advice from "./advice.png";
 
 const constant = [
   {
@@ -35,6 +37,12 @@ const constant = [
     link: "https://github.com/Ammar312/ai-assistant-gpt",
   },
   {
+    img: dictionary,
+    title: "Dictionary App ",
+    description: "React, CSS3",
+    link: "https://ammar-dicitionary-app.netlify.app/",
+  },
+  {
     img: mongo,
     title: "MongoDB Crud ",
     description: "HTML, CSS, NodeJS, ExpressJS",
@@ -56,19 +64,25 @@ const constant = [
     img: grocerybud,
     title: "Grocery Bud ",
     description: "HTML, CSS, JavaScript",
-    link: "",
+    link: "https://ammar312.github.io/grocery-list/",
   },
   {
     img: birthday,
     title: "Birthday Counter ",
     description: "HTML, CSS, JavaScript",
-    link: "",
+    link: "https://ammar312.github.io/far-away-birthday/",
   },
   {
     img: projectplanning,
     title: "Project Planning ",
     description: "HTML, CSS, JavaScript",
-    link: "",
+    link: "https://ammar312.github.io/project-planning/",
+  },
+  {
+    img: advice,
+    title: "Advice App ",
+    description: "React, CSS",
+    link: "https://advice-app-ammar.netlify.app/",
   },
 ];
 export default constant;

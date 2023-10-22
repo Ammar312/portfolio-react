@@ -19,7 +19,7 @@ const Projects = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="group relative border-white/50 border-2 overflow-hidden rounded-xl max-w-[550px] "
+              className="group relative  overflow-hidden rounded-xl max-w-[550px] "
               key={index}
             >
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
