@@ -52,16 +52,21 @@ const Contact = () => {
               viewport={{ once: false, amount: 0.7 }}
               className=" flex gap-5 text-[30px] md:text-[40px] max-w-max mb-4"
             >
-              <a href="https://github.com/Ammar312/">
+              <a href="https://github.com/Ammar312/" target="_blank">
                 <FaGithub />
               </a>
               <a
                 href="https://www.linkedin.com/in/ammar-ul-mustafa-728b5820b/"
                 className="text-blue-500"
+                target="_blank"
               >
                 <FaLinkedin />
               </a>
-              <a href="#" className="text-green-500">
+              <a
+                href=" https://wa.me/3104160942"
+                className="text-green-500"
+                target="_blank"
+              >
                 <FaWhatsapp />
               </a>
             </motion.div>
