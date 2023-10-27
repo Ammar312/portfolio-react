@@ -29,7 +29,7 @@ const Nav = () => {
             {/* <BiUser /> */}
             <BsClipboardData />
           </Link>
-          {/* <Link
+          <Link
             to="work"
             activeClass="active"
             smooth={true}
@@ -37,7 +37,7 @@ const Nav = () => {
             className=" cursor-pointer w-[60px] h-[60px] flex justify-center items-center"
           >
             <BsBriefcase />
-          </Link> */}
+          </Link>
           <Link
             to="projects"
             activeClass="active"

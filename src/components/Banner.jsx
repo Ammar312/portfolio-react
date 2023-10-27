@@ -22,25 +22,25 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" text-[45px] font-bold max-lg:leading-[50px] leading-[85px] md:text-[55px] lg:text-[75px] mb-6 lg:mb-5"
+              className=" text-[40px] font-bold max-lg:leading-[50px] leading-[85px] md:text-[50px] lg:text-[60px] mb-6 lg:mb-5"
             >
-              AMMAR <span> MUSTAFA</span>
+              AMMAR <span className="">UL</span> MUSTAFA
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" mb-6 text-[39px] lg:text-[40px] font-rajdhani font-semibold uppercase leading-[1]"
+              className=" mb-6 text-[35px] lg:text-[44px] font-rajdhani font-semibold uppercase leading-[1]"
             >
-              <span className=" mr-3">I AM A </span>
+              <span className=" mr-3">I AM </span>
               <TypeAnimation
                 sequence={[
-                  "Front-End Developer ",
+                  "Student ",
                   2000,
-                  "Back-End Developer",
+                  "Mern Developer",
                   2000,
-                  "Mern-Stack Developer",
+                  "Web Developer",
                   2000,
                 ]}
                 speed={50}
