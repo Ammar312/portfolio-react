@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import img1 from "../assets/portfolio.png";
 import social from "../assets/socialmedia.png";
+import chat from "../assets/chatui.png";
 
 const Work = () => {
   return (
@@ -21,10 +22,7 @@ const Work = () => {
                 Upcoming <br />
                 Projects
               </h2>
-              <p className="max-w-sm mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-                voluptatibus perspiciatis placeat, reiciendis magnam harum
-              </p>
+              <p className="max-w-sm mb-8">Prjocets on th way</p>
               <button className=" btn btn-sm">View All Projects</button>
             </div>
             <div className=" group relative border-white/50 border-2 overflow-hidden rounded-xl">
@@ -56,8 +54,10 @@ const Work = () => {
                 alt="work"
                 className=" group-hover:scale-125 transition-all duration-500"
               />
-              <div className=" absolute -bottom-full left-56 group-hover:bottom-40 transition-all duration-500 z-50">
-                <span className=" text-gradient text-3xl">Coming Soon...</span>
+              <div className=" absolute -bottom-full left-20 lg:left-52 group-hover:bottom-36 lg:group-hover:bottom-40 transition-all duration-500 z-50">
+                <span className=" text-gradient text-xl lg:text-3xl">
+                  Coming Soon...
+                </span>
               </div>
               <div className=" absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                 <span className=" text-gradient">MERN STACK</span>
@@ -70,11 +70,17 @@ const Work = () => {
             </div>
             <div className=" group relative border-white/50 border-2 overflow-hidden rounded-xl">
               <div className=" group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+
               <img
-                src={img1}
+                src={chat}
                 alt="work"
-                className=" group-hover:scale-125 transition-all duration-500"
+                className=" group-hover:scale-125 transition-all duration-500 h-96 w-full"
               />
+              <div className=" absolute -bottom-full left-20 lg:left-52 group-hover:bottom-36 lg:group-hover:bottom-40 transition-all duration-500 z-50">
+                <span className=" text-gradient text-xl lg:text-3xl">
+                  Coming Soon...
+                </span>
+              </div>
               <div className=" absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                 <span className=" text-gradient">UI/UX Design</span>
               </div>
