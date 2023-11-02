@@ -4,6 +4,7 @@ import { fadeIn } from "../variants";
 import img1 from "../assets/portfolio.png";
 import social from "../assets/socialmedia.png";
 import chat from "../assets/chatui.png";
+import { Link } from "react-scroll";
 
 const Work = () => {
   return (
@@ -22,8 +23,12 @@ const Work = () => {
                 Upcoming <br />
                 Projects
               </h2>
-              <p className="max-w-sm mb-8">Prjocets on th way</p>
-              <button className=" btn btn-sm">View All Projects</button>
+              <p className="max-w-sm mb-8">
+                Prjocets under the work to showcase{" "}
+              </p>
+              <Link to="projects" smooth={true} spy={true}>
+                <button className=" btn btn-sm">View All Projects</button>
+              </Link>
             </div>
             <div className=" group relative border-white/50 border-2 overflow-hidden rounded-xl">
               <div className=" group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
@@ -52,7 +57,7 @@ const Work = () => {
               <img
                 src={social}
                 alt="work"
-                className=" group-hover:scale-125 transition-all duration-500"
+                className=" group-hover:scale-125 transition-all duration-500 h-80 w-full"
               />
               <div className=" absolute -bottom-full left-20 lg:left-52 group-hover:bottom-36 lg:group-hover:bottom-40 transition-all duration-500 z-50">
                 <span className=" text-gradient text-xl lg:text-3xl">
@@ -74,7 +79,7 @@ const Work = () => {
               <img
                 src={chat}
                 alt="work"
-                className=" group-hover:scale-125 transition-all duration-500 h-96 w-full"
+                className=" group-hover:scale-125 transition-all duration-500 h-80 w-full"
               />
               <div className=" absolute -bottom-full left-20 lg:left-52 group-hover:bottom-36 lg:group-hover:bottom-40 transition-all duration-500 z-50">
                 <span className=" text-gradient text-xl lg:text-3xl">
