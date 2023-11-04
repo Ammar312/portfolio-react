@@ -35,13 +35,18 @@ const Work = () => {
               <img
                 src="https://www.sketchappsources.com/resources/source-image/upload-file-madalina-taina.png"
                 alt="work"
-                className=" group-hover:scale-125 transition-all duration-500"
+                className=" group-hover:scale-125 transition-all duration-500 h-96 w-full"
               />
+              <div className=" absolute -bottom-full left-20 lg:left-52 group-hover:bottom-36 lg:group-hover:bottom-40 transition-all duration-500 z-50">
+                <span className=" text-gradient text-xl lg:text-3xl">
+                  Coming Soon...
+                </span>
+              </div>
               <div className=" absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className=" text-gradient">UI/UX Design</span>
+                <span className=" text-gradient">Mern App</span>
               </div>
               <div className=" absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className=" text-2xl text-gradient">Project Title</span>
+                <span className=" text-2xl text-gradient">File Sharing</span>
               </div>
             </div>
           </motion.div>
@@ -87,10 +92,10 @@ const Work = () => {
                 </span>
               </div>
               <div className=" absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className=" text-gradient">UI/UX Design</span>
+                <span className=" text-gradient">React-Firebase</span>
               </div>
               <div className=" absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className=" text-2xl text-gradient">Project Title</span>
+                <span className=" text-2xl text-gradient">Chat App</span>
               </div>
             </div>
           </motion.div>
