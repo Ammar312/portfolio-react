@@ -33,7 +33,7 @@ const Work = () => {
             <div className=" group relative border-white/50 border-2 overflow-hidden rounded-xl">
               <div className=" group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               <img
-                src={img1}
+                src="https://www.sketchappsources.com/resources/source-image/upload-file-madalina-taina.png"
                 alt="work"
                 className=" group-hover:scale-125 transition-all duration-500"
               />
