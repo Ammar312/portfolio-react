@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from "../assets/cv.pdf";
+import pdf from "../assets/mycv.pdf";
 import { Tooltip } from "antd";
 
 const Header = () => {
