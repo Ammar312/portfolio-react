@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from "../assets/JavaScript.pdf";
+import pdf from "../assets/cv.pdf";
 import { Tooltip } from "antd";
 
 const Header = () => {
@@ -17,12 +17,7 @@ const Header = () => {
             </div>
           </Tooltip>
           <Tooltip title="Download My CV" color="#b936ee">
-            <a
-              href={pdf}
-              download="javascript"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={pdf} download="ammarcv" target="_blank" rel="noreferrer">
               <button className=" btn btn-sm">Download CV</button>
             </a>
           </Tooltip>
